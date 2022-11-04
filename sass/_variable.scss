@@ -1,0 +1,22 @@
+//colors
+//*Primary
+$Pink:hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+$white:white;
+$blue:hsl(228, 45%, 44%);
+
+//*Neutral
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Very-Pale-Blue: hsl(207, 100%, 98%);
+
+//typography
+//*Headings
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+$Headings-Family: 'Poppins', sans-serif;
+$Weights: 700;
+
+//*Body
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$Body-Family: 'Open Sans', sans-serif;
+$Weights: 400, 600, 700

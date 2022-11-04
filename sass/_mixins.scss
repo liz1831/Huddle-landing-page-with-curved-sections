@@ -1,0 +1,88 @@
+@import 'variable';
+@mixin section-values{    
+    .img{
+        width: 35px;
+        @media (min-width:500px){
+            width: 65px;
+        }
+        @media (min-width:700px){
+            width: 70px;
+        }
+    }
+    .values{
+        font-size: 70px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+}
+
+@mixin text {
+    padding: 0 25px;
+    .subtitle{
+        padding: 5px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .description{
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@mixin buttons($border-radius, $padding, $margin) {
+    background: $Pink;
+    border-radius: $border-radius;
+    color: $white;
+    margin: $margin;
+    padding: $padding;
+    font-weight: 700;
+    &:hover{
+        cursor: pointer;
+        background-color: $Light-Pink;
+    }
+}
+
+@mixin banner($imageTop, $imageBottom) {
+    background: {
+       image: url($imageTop), url($imageBottom);
+       repeat: no-repeat, no-repeat;
+       position-y: top, bottom;
+    };
+}
+
+@mixin SocialMedia($logo) {
+    background: {
+        image:url($logo);
+        repeat:no-repeat;
+    };
+    padding: 15px;    
+}
+
+@mixin icon($icon) {
+    background: {
+        image:url($icon);
+        repeat:no-repeat;
+    };
+    padding: 0 15px;
+}
+
+@mixin content-information {
+    .title{
+        font-weight: 700;
+        margin: 30px 5px;
+        font-family: $Headings-Family;
+    }
+    .button{
+        @include buttons(25px, 15px,30px 0);
+    }
+}
+@mixin grid-column-and-row ($col-start,$col-end,$row-start,$row-end){
+    grid-column-start: $col-start;
+    grid-column-end: $col-end;
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+}
