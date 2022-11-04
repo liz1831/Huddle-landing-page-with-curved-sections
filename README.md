@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview](./design/desktop-preview.jpg)
+![Preview](../design/desktop-preview.jpg)
 
 ## My process
 
